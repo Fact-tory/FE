@@ -1,7 +1,15 @@
 import "./globals.css";
-import { ReactNode } from "react";
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export const metadata = {
+  title: "Fact-tory",
+  description: "뉴스 편향성 분석 AI",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="ko">
       <body>{children}</body>
