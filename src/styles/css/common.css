@@ -1,0 +1,383 @@
+@charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Pretendard";
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  display: block;
+}
+html {
+  scroll-behavior: smooth;
+}
+.skip {
+  font-size: 1px;
+  height: 1px;
+  line-height: 1px;
+  overflow: hidden;
+  position: absolute;
+  text-indent: 4px;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* ScrollBar */
+* ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+* ::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+* ::-webkit-scrollbar-track {
+  background-color: #f7f8f8;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px white;
+}
+
+/* txt */
+.p_txt {
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+}
+
+/* font-weight */
+.fw100 {
+  font-weight: 100 !important;
+}
+.fw200 {
+  font-weight: 200 !important;
+}
+.fw300 {
+  font-weight: 300 !important;
+}
+.fw400 {
+  font-weight: 400 !important;
+}
+.fw500 {
+  font-weight: 500 !important;
+}
+.fw600 {
+  font-weight: 600 !important;
+}
+.fw700 {
+  font-weight: 700 !important;
+}
+.fw800 {
+  font-weight: 800 !important;
+}
+.fw900 {
+  font-weight: 900 !important;
+}
+
+/* color */
+:root {
+  --txt-gray01: #d0d0d0 !important;
+  --txt-gray02: #555d7e !important;
+  --main-pink: #e265ff !important;
+  --main-violet: #6366f1 !important;
+  --sub-violet: #b98fff !important;
+  --main-yellow: #ffbc0d !important;
+  --sub-pink: #ff79a1 !important;
+  --list_hover: #3a3b4b !important;
+}
+
+/*******************************margin*******************************/
+.mt10 {
+  margin-top: 10px !important;
+}
+.mt15 {
+  margin-top: 15px !important;
+}
+.mt20 {
+  margin-top: 20px !important;
+}
+.mt25 {
+  margin-top: 25px !important;
+}
+.mt30 {
+  margin-top: 30px !important;
+}
+.mt35 {
+  margin-top: 35px !important;
+}
+.mt40 {
+  margin-top: 40px !important;
+}
+.mt45 {
+  margin-top: 45px !important;
+}
+.mt50 {
+  margin-top: 50px !important;
+}
+
+.mb10 {
+  margin-bottom: 10px !important;
+}
+.mb15 {
+  margin-bottom: 15px !important;
+}
+.mb20 {
+  margin-bottom: 20px !important;
+}
+.mb25 {
+  margin-bottom: 25px !important;
+}
+.mb30 {
+  margin-bottom: 30px !important;
+}
+.mb35 {
+  margin-bottom: 35px !important;
+}
+.mb40 {
+  margin-bottom: 40px !important;
+}
+.mb45 {
+  margin-bottom: 45px !important;
+}
+.mb50 {
+  margin-bottom: 50px !important;
+}
+
+/*******************************padding*******************************/
+.ptb4 {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
+.ptb8 {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+.ptb12 {
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+}
+.ptb16 {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+.ptb20 {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+.ptb24 {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+}
+.ptb28 {
+  padding-top: 28px !important;
+  padding-bottom: 28px !important;
+}
+.ptb32 {
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+}
+.ptb36 {
+  padding-top: 36px !important;
+  padding-bottom: 36px !important;
+}
+.ptb40 {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+.ptb44 {
+  padding-top: 44px !important;
+  padding-bottom: 44px !important;
+}
+.ptb48 {
+  padding-top: 48px !important;
+  padding-bottom: 48px !important;
+}
+
+.plr4 {
+  padding-left: 4px !important;
+  padding-right: 4px !important;
+}
+.plr8 {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+.plr12 {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+.plr16 {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+.plr20 {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+.plr24 {
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+.plr28 {
+  padding-left: 28px !important;
+  padding-right: 28px !important;
+}
+.plr32 {
+  padding-left: 32px !important;
+  padding-right: 32px !important;
+}
+.plr36 {
+  padding-left: 36px !important;
+  padding-right: 36px !important;
+}
+.plr40 {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+.plr44 {
+  padding-left: 44px !important;
+  padding-right: 44px !important;
+}
+.plr48 {
+  padding-left: 48px !important;
+  padding-right: 48px !important;
+}
+
+/*******************************gap*******************************/
+.gap4 {
+  gap: 4px !important;
+}
+.gap8 {
+  gap: 8px !important;
+}
+.gap12 {
+  gap: 12px !important;
+}
+.gap16 {
+  gap: 16px !important;
+}
+.gap20 {
+  gap: 20px !important;
+}
+.gap24 {
+  gap: 24px !important;
+}
+.gap28 {
+  gap: 28px !important;
+}
+.gap32 {
+  gap: 32px !important;
+}
+.gap36 {
+  gap: 36px !important;
+}
+.gap40 {
+  gap: 40px !important;
+}
+.gap44 {
+  gap: 44px !important;
+}
+.gap48 {
+  gap: 48px !important;
+}
+.gap52 {
+  gap: 52px !important;
+}
+.gap56 {
+  gap: 56px !important;
+}
+.gap60 {
+  gap: 60px !important;
+}
+
+/*******************************bul*******************************/
+.bul_sty01 > span {
+  position: relative;
+  padding-left: 20px;
+  line-height: 1;
+}
+.bul_sty01 > span::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: url();
+  background-position: center;
+  background-position: cover;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*******************************btn*******************************/
+button > span {
+  line-height: 1;
+}
+.btn_sty01 {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: skyblue;
+}
+.btn_sty01 > span {
+  font-family: "SCDream";
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.btn_sty02 {
+  padding: 10px 30px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.btn_sty02 > span {
+  font-family: "SCDream";
+  color: #000;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+/*******************************table*******************************/
+.table_sty01 {
+  width: 500px;
+}
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 1px solid #000;
+}
+th,
+td {
+  border: 1px solid #000;
+}
+th {
+  height: 60px;
+}
+td {
+  height: 50px;
+}
+
+/*******************************fix*******************************/
+/* scroll */
+#top_btn {
+  z-index: 9997;
+  position: fixed;
+  border: none;
+  bottom: 100px;
+  right: 50px;
+  background: url(/img/common/ico_scroll.svg) no-repeat center;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}

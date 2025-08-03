@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+@media screen and (max-width: 1680px) {
+  .inner_size,
+  .footer_inner {
+    width: 100%;
+    transition: 0.2s;
+    padding-left: 60px;
+    padding-right: 60px;
+    box-sizing: border-box;
+  }
+
+  #quick_wrap {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 860px) {
+}
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 540px) {
+  .inner_size,
+  .footer_inner {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header_inner {
+    height: 60px;
+  }
+}

@@ -1,8 +1,8 @@
-// src/components/SidebarLayout.tsx
-
 import Link from "next/link";
 import Image from "next/image";
 import Sidebar from "./Sidebar";
+import Footer from "../Footer/Footer";
+import TopButton from "./TopButton";
 
 const historyItems = [
   // test data
@@ -27,7 +27,7 @@ export default function SidebarLayout({
                 src="/img/common/header_logo.png"
                 alt="로고"
                 width={84}
-                height={84}
+                height={97}
               />
             </Link>
             <Link href="#" className="history_search">
@@ -84,14 +84,17 @@ export default function SidebarLayout({
 
       {/* 콘텐츠 영역 */}
       <div className="right_wrap">
-        <div id="contents_wrap">
-          <div className="inner_size sub_inner">{children}</div>
+        <div id="contents_wrap" className="main_contents">
+          {children}
         </div>
+        <Footer></Footer>
       </div>
 
-      <button id="top_btn" type="button">
+      <TopButton></TopButton>
+
+      {/* <button id="top_btn" type="button">
         <span className="skip">스크롤아이콘입니다.</span>
-      </button>
+      </button> */}
     </div>
   );
 }
