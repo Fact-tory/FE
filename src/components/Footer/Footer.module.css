@@ -1,0 +1,124 @@
+/* footer */
+.footer {
+  /* margin-left: 240px; */
+  width: 100%; /* background-color: #25282C; */
+}
+.footer_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: auto;
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+.footer_bottom {
+  width: 100%;
+  padding-top: 30px;
+  border-top: 1px solid #565656;
+}
+.project_link {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.project_link:hover {
+  background-color: var(--list_hover);
+  padding: 10px 24px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  transition: 0.6s;
+}
+.project_link > p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1;
+  color: #fff;
+}
+.project_link_icon {
+  display: flex;
+  align-items: center;
+}
+.project_link_icon > li > a {
+  display: block;
+  height: 28px;
+  padding: 5px 10px;
+}
+.project_link_icon > li > a {
+  height: 100%;
+  display: block;
+}
+.footer_center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer_link_wrap {
+  display: flex;
+  color: #fff;
+}
+.footer_link_depth {
+  display: flex;
+}
+.footer_link_depth > li {
+  display: flex;
+  flex-direction: column;
+}
+.footer_link_depth > li > a {
+  font-size: 17px;
+  letter-spacing: 0;
+  line-height: 1;
+  font-weight: 700;
+}
+.footer_link_depth02 {
+  display: flex;
+  flex-direction: column;
+}
+.footer_link_depth02 > li > a {
+  color: var(--txt-gray01);
+}
+.project_member {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.project_member > p {
+  font-size: 22px;
+  color: #fff;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  font-weight: 600;
+}
+.member_list {
+  display: flex;
+}
+.member_list > li > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.member_img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-color: #565656;
+  border-radius: 50%;
+}
+.member_list > li > a > p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  color: var(--txt-gray01);
+}
+.footer_bott_list {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--txt-gray01);
+}
+.user_agree {
+  color: #fff;
+}

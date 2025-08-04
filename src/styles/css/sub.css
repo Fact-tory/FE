@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/*******************************sub_txt*******************************/
+/* 메인은 단독페이지이기 때문에 main에서 쓰이는 공통타이틀은 main.css에 작성
+sub페이지에서 사용되는 공통타이틀은 sub.css에 작성 */
+.tit{font-family: 'SCDream'; font-size: 33px; font-weight: 800; line-height: 1; letter-spacing: -0.5px; color: var(--main-red--);}
+.sub_tit01{font-family: 'SCDream'; font-size: 25px; font-weight: 600; line-height: 1.4; letter-spacing: -0.5px;}
+.sub_tit02{font-family: 'SCDream'; font-size: 18px; font-weight: 500; line-height: 1.4; letter-spacing: -0.5px;}
+.p_txt{font-family: 'SCDream'; font-size: 16px; font-weight: 300; line-height: 1.6; letter-spacing: -0.5px;}
+
+/* 서브타이틀 가상요소타이틀 */
+.tit > span{position: relative; padding-left: 12px; line-height: 1;}
+.tit > span::before{content: ''; display: block; width: 6px; height: 6px; background-color: tomato; position: absolute;
+left: 0; top: 50%; transform: translateY(-50%);}
+
+
+/*******************************contents start*******************************/
+.sub_contents .contents{width: 100%; padding-top: 50px;}

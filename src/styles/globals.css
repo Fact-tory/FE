@@ -1,0 +1,18 @@
+/* 폰트 불러오기 */
+@import "../styles/fonts/pretendard.css";
+
+/* 기본 설정들 */
+@import "./css/common.css";
+@import "./css/keyframes.css";
+@import "./css/layout.css";
+@import "./css/main.css";
+@import "./responsive/responsive.css";
+@import "./css/sub.css";
+@import "./css/swiper-bundle.min.css";
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  background-color: #0f1117;
+  min-height: 100vh;
+}
