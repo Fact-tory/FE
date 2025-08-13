@@ -39,7 +39,6 @@ sub페이지에서 사용되는 공통타이틀은 sub.css에 작성 */
   justify-content: space-between;
   height: 100%;
 }
-
 .sec01_left_tit {
   color: #ffff;
   font-size: 78px;
@@ -59,7 +58,6 @@ sub페이지에서 사용되는 공통타이틀은 sub.css에 작성 */
   letter-spacing: 1px;
   margin-bottom: 70px;
 }
-
 .main_searhbox {
   display: flex;
   align-items: center;
@@ -73,9 +71,9 @@ sub페이지에서 사용되는 공통타이틀은 sub.css에 작성 */
   border-radius: 32px 0 0 32px;
   font-size: 16px;
   padding: 0 20px;
-  font-weight: 500;
+  font-weight: 400;
   box-sizing: border-box;
-  background-color: var(--txt-gray01);
+  background-color: #fff;
   border: none;
 }
 .searh_btn {
@@ -88,7 +86,6 @@ sub페이지에서 사용되는 공통타이틀은 sub.css에 작성 */
   border-radius: 0 32px 32px 0;
   background: radial-gradient(circle, #a881fe 0%, #6419ff 100%);
 }
-
 .searh_btn > span {
   position: relative;
   color: #fff;
@@ -96,7 +93,6 @@ sub페이지에서 사용되는 공통타이틀은 sub.css에 작성 */
   font-weight: 700;
   padding-left: 28px;
 }
-
 .searh_btn > span::before {
   content: "";
   display: block;
@@ -127,7 +123,6 @@ sub페이지에서 사용되는 공통타이틀은 sub.css에 작성 */
   letter-spacing: 0;
   text-align: center;
 }
-
 .section02 .api_list {
   width: 100%;
   display: flex;
@@ -135,20 +130,16 @@ sub페이지에서 사용되는 공통타이틀은 sub.css에 작성 */
   align-items: center;
   justify-content: center;
 }
-
 .section02 .api_list > li > a {
   height: 60px;
   display: block;
 }
-
 .section02 .api_list > li:first-child > a {
   height: 36px;
 }
-
 .section02 .api_list > li:last-child > a {
   height: 25px;
 }
-
 .section02 .api_list > li > a > img {
   height: 100%;
   display: block;
@@ -161,7 +152,6 @@ sub페이지에서 사용되는 공통타이틀은 sub.css에 작성 */
   gap: 60px;
   align-items: center;
 }
-
 .sec03_list_wrap > li {
   display: flex;
   flex-direction: column;
@@ -169,7 +159,6 @@ sub페이지에서 사용되는 공통타이틀은 sub.css에 작성 */
   align-items: center;
   text-align: center;
 }
-
 .sec03_list_wrap > li > span {
   color: #fff;
   font-size: 33px;
@@ -177,21 +166,17 @@ sub페이지에서 사용되는 공통타이틀은 sub.css에 작성 */
   line-height: 1;
   letter-spacing: 1px;
 }
-
 .sec03_img {
   width: 98px;
 }
-
 .sec03_img > img {
   width: 100%;
 }
-
 .sec03_txtbox {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
 .sec03_list_tit {
   font-size: 22px;
   font-weight: 500;
@@ -199,11 +184,9 @@ sub페이지에서 사용되는 공통타이틀은 sub.css에 작성 */
   letter-spacing: -0.5px;
   color: #fff;
 }
-
 .sec03_list_tit > span {
   color: var(--main-pink);
 }
-
 .sec03_list_txt {
   color: var(--txt-gray02);
   font-size: 16px;
@@ -216,12 +199,10 @@ sub페이지에서 사용되는 공통타이틀은 sub.css에 작성 */
 .section04 {
   background-color: #171921;
 }
-
 .sec04_tab_wrap {
   display: flex;
   justify-content: center;
 }
-
 .sec04_tab {
   padding: 6px 52px;
   border-radius: 30px;
@@ -230,7 +211,6 @@ sub페이지에서 사용되는 공통타이틀은 sub.css에 작성 */
   justify-content: center;
   margin-bottom: 40px;
 }
-
 .sec04_tab > li > a {
   font-size: 16px;
   font-weight: 600;
@@ -239,84 +219,58 @@ sub페이지에서 사용되는 공통타이틀은 sub.css에 작성 */
   display: block;
   padding: 10px 36px;
 }
-
 .sec04_tab > li.on > a {
   background-color: #171921;
   border-radius: 30px;
   font-weight: 700;
 }
-
 .sec04_slider_wrap {
   width: 100%;
   position: relative;
 }
-
 .sec04_slider {
   width: 100%;
   padding-bottom: 32px;
 }
-
-/* .sec04_slider > ul > li {
+.sec04_slider > ul > li {
   background: rgba(255, 255, 255, 0.9);
   border-radius: 24px;
   display: flex;
   flex-direction: column;
   padding: 24px;
   box-sizing: border-box;
-  gap: 16px;
-} */
-
-.swiper-wrapper {
-  margin-bottom: 32px;
+  gap: 20px;
 }
-
-.swiper-slide-inner {
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 24px;
-  display: flex;
-  flex-direction: column;
-  padding: 24px;
-  box-sizing: border-box;
-  gap: 16px;
-  /* height: 100%; */
-}
-
 .sec04_img {
   width: 100%;
   height: 130px;
   border-radius: 18px;
   overflow: hidden;
 }
-
 .sec04_img > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .sec04_tit {
   font-size: 18px;
   font-weight: 800;
   line-height: 1;
   margin-bottom: 20px;
 }
-
 .sec04_txt {
   line-height: 1.4 !important;
 }
-
 .sec04_txt_bott {
   display: flex;
   gap: 8px;
   flex-direction: column;
 }
-
 .sec04_new_ect {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .sec04_new_ect > li {
   font-size: 15px;
   color: var(--txt-gray02);
@@ -324,7 +278,6 @@ sub페이지에서 사용되는 공통타이틀은 sub.css에 작성 */
   letter-spacing: -0.5px;
   font-weight: 400;
 }
-
 .se04_more_btn {
   width: 100%;
   text-align: center;
@@ -338,8 +291,9 @@ sub페이지에서 사용되는 공통타이틀은 sub.css에 작성 */
   border-radius: 8px;
   background-color: var(--main-violet);
 }
-
-.sec04_slider_wrap .swiper-pagination {
+.sec04_slider_wrap .swiper-pagination,
+.results_slider .swiper-pagination {
+  z-index: 2;
   top: auto !important;
   bottom: 0 !important;
   left: 50% !important;
@@ -348,13 +302,11 @@ sub페이지에서 사용되는 공통타이틀은 sub.css에 작성 */
   justify-content: center;
   gap: 3px;
 }
-
 .swiper-pagination-bullet {
   width: 9px !important;
   height: 9px !important;
   background-color: #fff !important;
 }
-
 .swiper-pagination-bullet-active {
   width: 16px !important;
   border-radius: 20px !important;
@@ -367,9 +319,8 @@ sub페이지에서 사용되는 공통타이틀은 sub.css에 작성 */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 50px;
+  gap: 40px;
 }
-
 .main_chart_list > li {
   width: calc(100% / 5 - 40px);
   border-radius: 14px;
@@ -377,7 +328,6 @@ sub페이지에서 사용되는 공통타이틀은 sub.css에 작성 */
   box-sizing: border-box;
   background-color: var(--list_hover);
 }
-
 .main_chart_tit {
   font-size: 24px;
   color: #fff;
@@ -386,7 +336,6 @@ sub페이지에서 사용되는 공통타이틀은 sub.css에 작성 */
   text-align: center;
   margin-bottom: 16px;
 }
-
 .main_chart_txt {
   color: var(--txt-gray01);
   text-align: center;
@@ -394,7 +343,6 @@ sub페이지에서 사용되는 공통타이틀은 sub.css에 작성 */
   font-weight: 300;
   line-height: 1.3;
 }
-
 .main_chart_view {
   border-radius: 14px;
   width: 100%;

@@ -1,66 +1,66 @@
 @charset "utf-8";
 
 /* Pretendard */
-@font-face{
-    font-family: 'Pretendard';
-    font-style: normal;
-    font-weight: 100;
-    src: local(font/Pretendard-Thin);
-    src: url(font/Pretendard-Thin.otf)format('opentype');
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 100;
+  src: local(font/Pretendard-Thin);
+  src: url(font/Pretendard-Thin.otf) format("opentype");
 }
-@font-face{
-    font-family: 'Pretendard';
-    font-style: normal;
-    font-weight: 200;
-    src: local(font/Pretendard-ExtraLight);
-    src: url(font/Pretendard-ExtraLight.otf)format('opentype');
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 200;
+  src: local(font/Pretendard-ExtraLight);
+  src: url(font/Pretendard-ExtraLight.otf) format("opentype");
 }
-@font-face{
-    font-family: 'Pretendard';
-    font-style: normal;
-    font-weight: 300;
-    src: local(font/Pretendard-Light);
-    src: url(font/Pretendard-Light.otf)format('opentype');
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 300;
+  src: local(font/Pretendard-Light);
+  src: url(font/Pretendard-Light.otf) format("opentype");
 }
-@font-face{
-    font-family: 'Pretendard';
-    font-style: normal;
-    font-weight: 400;
-    src: local(font/Pretendard-Regular);
-    src: url(font/Pretendard-Regular.otf)format('opentype');
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  src: local(font/Pretendard-Regular);
+  src: url(font/Pretendard-Regular.otf) format("opentype");
 }
-@font-face{
-    font-family: 'Pretendard';
-    font-style: normal;
-    font-weight: 500;
-    src: local(font/Pretendard-Medium);
-    src: url(font/Pretendard-Medium.otf)format('opentype');
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  src: local(font/Pretendard-Medium);
+  src: url(font/Pretendard-Medium.otf) format("opentype");
 }
-@font-face{
-    font-family: 'Pretendard';
-    font-style: normal;
-    font-weight: 600;
-    src: local(font/Pretendard-SemiBold);
-    src: url(font/Pretendard-SemiBold.otf)format('opentype');
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  src: local(font/Pretendard-SemiBold);
+  src: url(font/Pretendard-SemiBold.otf) format("opentype");
 }
-@font-face{
-    font-family: 'Pretendard';
-    font-style: normal;
-    font-weight: 700;
-    src: local(font/Pretendard-Bold);
-    src: url(font/Pretendard-Bold.otf)format('opentype');
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  src: local(font/Pretendard-Bold);
+  src: url(font/Pretendard-Bold.otf) format("opentype");
 }
-@font-face{
-    font-family: 'Pretendard';
-    font-style: normal;
-    font-weight: 800;
-    src: local(font/Pretendard-ExtraBold);
-    src: url(font/Pretendard-ExtraBold.otf)format('opentype');
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 800;
+  src: local(font/Pretendard-ExtraBold);
+  src: url(font/Pretendard-ExtraBold.otf) format("opentype");
 }
-@font-face{
-    font-family: 'Pretendard';
-    font-style: normal;
-    font-weight: 900;
-    src: local(font/Pretendard-Black);
-    src: url(font/Pretendard-Black.otf)format('opentype');
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 900;
+  src: local(font/Pretendard-Black);
+  src: url(font/Pretendard-Black.otf) format("opentype");
 }
