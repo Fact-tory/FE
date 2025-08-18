@@ -61,7 +61,6 @@ export default function Footer() {
             <p>뉴스 편향성 분석 AI 만든 사람들</p>
             <ul className="member_list gap24">
               {[
-                "서비스 기획 & AI 개발",
                 "Front-End 개발 & UIUX설계 디자인",
                 "Back-End 개발 & AI 기능 구현",
                 "Front-End 개발 & Back-End 기능 지원",
