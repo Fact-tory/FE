@@ -119,7 +119,7 @@ export default function Home() {
             >
               {slideData.map((i) => (
                 <SwiperSlide key={i}>
-                  <div className="swiper-slide-inner">
+                  <div className="swiper-slide-inner ">
                     <div className="sec04_img">
                       <img src="/img/main/img_sec04_img.png" alt="" />
                     </div>
