@@ -30,7 +30,6 @@ export default function YoutubeSlider({ items }: { items: string[] }) {
           </div>
         </SwiperSlide>
       ))}
-      <div className="swiper-pagination" />
     </Swiper>
   );
 }
