@@ -1,12 +1,24 @@
-"use client";
-
 import LayoutWithSidebar from "../components/Sidebar/SidebarLayout";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { getMainDashboardOnServer } from "@/services/dashboard";
+import TrendingSlider from "@/components/Main/TrendingSlider";
+import CategoryTabsWithSlider from "@/components/Main/CategoryTab";
+import type { CategoryGroup } from "@/types/Main/dashboard";
 
-export default function Home() {
-  const categories = ["정치", "경제", "사회", "문화"];
-  const slideData = [1, 2, 3, 4];
+export default async function Home() {
+  const res = await getMainDashboardOnServer({
+    realtime_limit: 20,
+    trending_limit: 10,
+    category_limit: 5,
+    search_limit: 10,
+  });
+
+  const data = res.data;
+
+  const categoryGroups: CategoryGroup[] = Object.values<CategoryGroup>(
+    data.categories ?? {}
+  );
+
+  const slideArticles = data.trending?.articles ?? [];
 
   return (
     <LayoutWithSidebar>
@@ -18,11 +30,11 @@ export default function Home() {
               <span>Fact-tory</span>
             </p>
             <p className="sec01_left_txt">
-              Deepgram's voice AI platform provides APIs for speech-to-
+              Deepgram&apos;s voice AI platform provides APIs for speech-to-
               <br />
-              Deepgram's voice AI platform provides APIs for speech-to-
+              Deepgram&apos;s voice AI platform provides APIs for speech-to-
               <br />
-              Deepgram's voice AI platform provides APIs for speech-to-
+              Deepgram&apos;s voice AI platform provides APIs for speech-to-
             </p>
             <div className="main_searhbox">
               <input
@@ -94,58 +106,7 @@ export default function Home() {
         <div className="inner_size sec04_inner">
           <p className="main_tit">실시간 인기 급상승 뉴스에요</p>
 
-          <div className="sec04_tab_wrap">
-            <ul className="sec04_tab">
-              {categories.map((tab, idx) => (
-                <li key={tab} className={idx === 0 ? "on" : ""}>
-                  <a href="#">{tab}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="sec04_slider_wrap">
-            <Swiper
-              modules={[Pagination]}
-              spaceBetween={45}
-              slidesPerView={1}
-              loop={true}
-              pagination={{ clickable: true }}
-              breakpoints={{
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
-              }}
-              className="sec04_slider swiper"
-            >
-              {slideData.map((i) => (
-                <SwiperSlide key={i}>
-                  <div className="swiper-slide-inner ">
-                    <div className="sec04_img">
-                      <img src="/img/main/img_sec04_img.png" alt="" />
-                    </div>
-
-                    <ul className="sec04_txtbox">
-                      <li className="sec04_tit">For frontier models {i}</li>
-                      <li className="sec04_txt p_txt">
-                        For frontier models For frontier modelsFor frontier
-                        models For frontier modelsForfrontrfsddfsdfsddfsdfsddff
-                      </li>
-                    </ul>
-
-                    <div className="sec04_txt_bott">
-                      <ul className="sec04_new_ect">
-                        <li>2025-07-20</li>
-                        <li>조선일보</li>
-                      </ul>
-                      <a href="#" className="se04_more_btn">
-                        MORE
-                      </a>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
+          <CategoryTabsWithSlider categories={categoryGroups} />
         </div>
       </section>
     </LayoutWithSidebar>

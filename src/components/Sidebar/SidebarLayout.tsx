@@ -39,7 +39,7 @@ export default function SidebarLayout({
           <nav className="header_nav">
             <ul className="header_depth gap8">
               <li>
-                <Link href="#">
+                <Link href="/">
                   <span className="header_ico haader_home">홈화면</span>
                 </Link>
               </li>
